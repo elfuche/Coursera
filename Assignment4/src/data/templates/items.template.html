@@ -1,0 +1,16 @@
+<!-- <ul>
+  <li ng-repeat="item in $ctrl.items">
+    {{ item.name }} &nbsp; {{ item.description }}
+  </li>
+</ul>
+ -->
+<div class="row" ng-repeat="item in $ctrl.items">
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h3 class="panel-title"><strong><em>{{ item.name }}</em></strong></h3>
+    </div>
+    <div class="panel-body">
+      {{ item.description }}
+    </div>
+  </div>
+</div>
