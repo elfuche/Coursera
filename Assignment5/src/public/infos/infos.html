@@ -1,0 +1,28 @@
+<div class="container">
+	<div class="row">
+		 <div class="col-sm-offset-4 col-sm-4">	
+			  <h1>Personal Data</h1>
+			  <span class="lead">{{infoCtrl.message}}</span>
+			  <br>
+			  <br>
+			  <div class="panel panel-default" ng-if="infoCtrl.found" style="background-color:#696969">
+		         <div class="panel-body">
+		           <ul>
+					  <li><h3>{{ infoCtrl.result.firstname }}  {{ infoCtrl.result.lastname }}</h3></li>
+					  <li><span class="glyphicon glyphicon-envelope"></span> &nbsp;{{ infoCtrl.result.email }}</li>
+					  <li><span class="glyphicon glyphicon-phone"></span> &nbsp;{{ infoCtrl.result.phone }}</li>
+		           </ul>
+		         </div>
+		         <div class="panel-footer">
+		         	<h2><em>Menu Preference :</em></h2>
+		            <h3><strong><i>{{ infoCtrl.result.title }}</i></strong></h3> <br>
+			        <img ng-src="{{infoCtrl.basePath}}/images/{{infoCtrl.result.img}}.jpg" alt="{{infoCtrl.result.img}}" class="img-responsive"></img>
+			        <br>
+			        <div class="center-block">
+			          <span class="lead">{{ infoCtrl.result.description }}</span>
+			        </div>
+		         </div>
+		      </div>
+	     </div> 
+	</div>
+</div>
